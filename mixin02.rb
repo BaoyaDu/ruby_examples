@@ -1,6 +1,6 @@
 # Module Debug resides in lib directory
 
-require_relative  'lib/test_module'
+require_relative  'lib/test_module' # module folder
 
 
 class Phonograph	

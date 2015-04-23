@@ -69,3 +69,7 @@ puts "a + b = #{c}"
 
 mig = Migration01.new(1, 2)
 mig.migrate01
+
+include AntGame::Actions
+AntGame::Actions::create_table01 # OK
+create_table01 # OK

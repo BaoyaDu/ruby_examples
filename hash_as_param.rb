@@ -14,3 +14,28 @@ h1[:action] = 'show'
 h1[:id] = "lijia"
 hash_as_param("yr", 26, h1)
 
+def test
+  0.upto(5) do |i|
+    puts "i = #{i}" 
+  end	
+end
+
+test
+
+
+def hash_test
+  h = { precision: 8, scale: 2, default: 0 }
+  #h.each{|key, value| puts "#{key}: #{value}," }
+  
+  h.each do |key, value|
+	if key == :default
+	  puts "default: 0"
+	elsif
+	  puts "#{key}: #{value},"
+	end	
+  end  
+ 
+end
+
+hash_test
+

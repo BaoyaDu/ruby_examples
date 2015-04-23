@@ -8,7 +8,7 @@ module Debug
 end
 
 
-class Phonograph	
+class Phonograph	< Object
 	include Debug
 
 	attr_accessor :str
