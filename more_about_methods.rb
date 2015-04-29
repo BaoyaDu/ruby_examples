@@ -4,7 +4,7 @@
 # *rest is an Array object
 puts "---  Variable-Length Argument List ---"
 def varargs(arg1, *rest)
-	#puts "rest.class = #{rest.class}"
+	puts "rest.class = #{rest.class}"
 	"Got #{arg1} and #{rest.join(', ')}"
 end
 
@@ -12,7 +12,8 @@ puts varargs("one") #"Got one and "
 puts varargs("one", "two") #"Got one and two"
 puts varargs "one", "two", "three" #"Got one and two, three"
 # Before 1.9, the Hash form:
-puts varargs "one", :two => 2, :three => 3, :four => 4
+puts varargs "one", :two => 2, :three => 3, :four => 4 # as a single Hash object
+puts varargs "one", {:two => 2, :three => 3, :four => 4} # the same as above
 # Above 1.9
 puts varargs "one", two: 2, three: 3, four: :dugl
 

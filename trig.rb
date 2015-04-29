@@ -13,6 +13,10 @@ module Trig
 		puts "The num is #{x}"
 	end
 	
+	def say_hi()
+	  puts "hi, module."
+	end
+	
 end
 
 # Keyword self & class methods
@@ -24,12 +28,19 @@ class MyClass01
 	end
 end
 
+# Before including, the following are legal
 # Outputs the costant PI in the module
 puts "PI = #{Trig::PI}"
 
 # Compares the difference betweeng calling sin (sine) and cos (co-cosine)
 # Calls the method directly from the module
 Trig::sin
+Trig.sin
+
+# After including, the following are legal
+include Trig
+Trig::say_hi
+Trig.say_hi
 
 # Ruby-specific mixin
 # include Trig

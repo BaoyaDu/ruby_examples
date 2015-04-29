@@ -2,39 +2,44 @@
 # who access the module's method! (v.s. multiple inhertance)
 
 module Debug
-	def who_am_i?
-		"#{self.class.name} (\##{self.object_id}): #{self.to_s}"
-	end
+  def who_am_i?
+    "#{self.class.name} (\##{self.object_id}): #{self.to_s}"
+  end
 end
 
 
+<<<<<<< HEAD
 class Phonograph	< Object
 	include Debug
+=======
+class Phonograph  
+  include Debug
+>>>>>>> 0a0656c2749571981341750e0ade0b8e32402d44
 
-	attr_accessor :str
-	
-	def initialize(name)
-		self.str = name
-	end
+  attr_accessor :str
+  
+  def initialize(name)
+    self.str = name
+  end
 
-	def to_s
-		return str
-	end
+  def to_s
+    return str
+  end
 end
 
 
 class EightTrack
-	include Debug
-	
-	attr_accessor :str
-	
-	def initialize(name)
-		self.str = name
-	end
+  include Debug
+  
+  attr_accessor :str
+  
+  def initialize(name)
+    self.str = name
+  end
 
-	def to_s
-		return str
-	end
+  def to_s
+    return str
+  end
 
 end
 
