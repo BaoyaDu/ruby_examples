@@ -43,7 +43,6 @@ Trig::say_hi
 Trig.say_hi
 
 # Ruby-specific mixin
-# include Trig
 Trig::cos
 
 # Uses class MyClass01 (class mehtod)

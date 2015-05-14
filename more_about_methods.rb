@@ -41,4 +41,4 @@ end
 
 tc = TaxCalculator.new("Sales tax") {|amt| amt * 0.075 }
 puts tc.get_tax(100) # => "Sales tax on 100 = 7.5"
-puts tc.get_tax(250) # => "Sales tax on 250 = 18.75"
+puts tc.get_tax(250) # => "Sales tax on 250 = 18.75" 

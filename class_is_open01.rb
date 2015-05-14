@@ -1,14 +1,12 @@
 # A class is open as is a module
 # 2013/05/31 10:08:26
 
-require './class_is_open02'
+require_relative 'class_is_open02'
 
 class ClassIsOpen01
-  
   def saySomething(sth)
     puts "saySomething: #{sth}"
   end
-  
 end
 
 # Reopen a class & add a new method

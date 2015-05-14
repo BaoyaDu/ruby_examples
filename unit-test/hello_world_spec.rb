@@ -24,8 +24,8 @@ describe HelloWorld do
     it "won't say no" do
       @hw.say_something('lijia').must_equal "lijia"
     end
-  end
-  
+  end  
+      
   after do
     @hw = nil # nullify
   end
